@@ -1,16 +1,19 @@
+
 print("welcome to score game!!!")
 score=0
+def normalize(text):
+    return text.lower().replace(" ", "").replace(",", "")
 
 q1=str(input("What is the capital of Maharashtra"))
-if q1 == "Mumbai":
+if normalize(q1) == normalize("Mumbai"):
     score = score+1
     print("q1 correct")
 else:
     score=score+0
     print("wrong!")
 
-q2=str(input("What is the colours of the indian flag"))
-if q2 == "Orange,White,Green":
+q2=str(input("What is the sequence of colours in the indian flag"))
+if normalize (q2) == normalize("Orange,White,Green"):
     score=score+1
     print("q2 correct")
 else:
@@ -18,7 +21,7 @@ else:
     print("wrong!")
 
 q3=str(input("who wrote the Indian constitution"))
-if q3 == "BR Ambetkar":
+if normalize(q3) == normalize("BR Ambedkar"):
     score=score+1
     print("q3 correct")
 else:
@@ -30,3 +33,4 @@ if score =="3":
     print("You won !!")
 else:
     print("try again")
+
