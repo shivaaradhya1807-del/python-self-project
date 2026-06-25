@@ -10,7 +10,7 @@ t.pensize(100)
 t.pencolor("lightblue")
 t.circle(90)
 
-colors = ["red", "yellow", "blue", "green", "purple", "white", "orange"]
+colors = ["red", "yellow", "blue", "lightgreen", "purple", "white", "lavender"]
 
 for i in range(30):
     t.forward(15)
